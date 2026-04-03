@@ -1,5 +1,5 @@
 # Loading the dataset
-full_data <- read.table("C:/Users/HP/Downloads/exdata_data_household_power_consumption/household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?", stringsAsFactors = FALSE)
+full_data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?", stringsAsFactors = FALSE)
 
 # seeing the subset to the two specific days
 data <- full_data[full_data$Date %in% c("1/2/2007", "2/2/2007"), ]
@@ -12,7 +12,7 @@ options(rpubs.upload.method = "internal")
 
 # STEP 1: LOADING AND PREPARING THE DATA
 # Ensuring that the data file is in my working directory
-dataset_file <- "C:/Users/HP/Downloads/exdata_data_household_power_consumption/household_power_consumption.txt"
+dataset_file <- "household_power_consumption.txt"
 
 # Reading the dataset with specific NA string handling
 full_data <- read.table(dataset_file, header = TRUE, sep = ";", 
